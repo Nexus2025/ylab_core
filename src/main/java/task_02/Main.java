@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         test();
 
-        int[] array = new int[]{5, 6, 3, 2, 5, 1, 4, 9};
+        int[] array = {5, 6, 3, 2, 5, 1, 4, 9};
         sort(array);
         System.out.println(String.format("Result: %s", Arrays.toString(array)));
     }
