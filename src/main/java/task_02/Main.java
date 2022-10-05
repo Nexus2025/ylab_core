@@ -11,20 +11,20 @@ public class Main {
         System.out.println(String.format("Result: %s", Arrays.toString(array)));
     }
 
-    private static void sort(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            int value = array[i];
+    private static void sort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            int value = arr[i];
 
             int j = i - 1;
             for (; j >= 0; j--) {
-                if (value < array[j]) {
-                    array[j + 1] = array[j];
+                if (value < arr[j]) {
+                    arr[j + 1] = arr[j];
                 } else {
                     break;
                 }
             }
 
-            array[j + 1] = value;
+            arr[j + 1] = value;
         }
     }
 
@@ -48,6 +48,5 @@ public class Main {
         int[] actual4 = {2, 7, 7, 2, 7, 99, 2, 0};
         sort(actual4);
         assert (Arrays.equals(expected4, actual4));
-
     }
 }
